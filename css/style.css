@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+header{
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: rgba(111, 128, 109, 0.9);
+    position: fixed;
+    
+}
+h1{
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/manga.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    display: flex;
+    justify-content: center;
+    text-indent: -9999px;
+}
+h1 a{
+    width: 70px;
+    height: 70px;
+    display: block;
+
+}
+h2{
+    width: 70px;
+    margin: 100px;
+    color: #ffffff;
+     
+}
+.history{
+    width:1000px;
+    margin-top: 100px;
+    padding: 45px ;
+    color: #ffffff;
+
+}
+.gif{
+    background-image: url(../img/5WY0.gif);
+    background-size: 2000px;
+    background-repeat: no-repeat;
+}
+.mainpage{
+    background-image: url(../img/357.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #B2A8A8;
+}
+
+
+nav{
+    width: 500px;
+    
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li a{
+    padding: 5px 10px;
+    color: #000000;
+    border-bottom: 1px solid rgba(255,255,255,0);
+    border-radius: 5px;
+    right: 5px;
+}
+
+ul li a:hover{
+    border-bottom: 1px solid rgba(255,255,255,1);
+    background-color: rgb(191, 192, 202);
+    color:black;
+}
+.active{
+    color: rgba(255,255,255,0.5);
+}
+footer{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(111, 128, 109, 0.9);
+    bottom: 0;
+    color: #000000;
+    position: fixed;
+}
+
+footer a{
+    color: #000000;
+}
+body{
+    background-color: #b0bfd1;
+    overflow:hidden;
+}
+.boom p{
+    width: 500px;
+    padding: 70px 0px ;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-top: 100px;
+    background-image: url(../img/boom.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.boom .pirveli{
+    margin-left: -600px;
+    animation: yvelaze 16s infinite;
+}
+.boom .meore {
+    
+    position: absolute;
+    top: 150px;
+    right: -600px;
+    animation: cnobili 14s infinite 2s;
+}
+.boom .mesame{
+    margin-left: -600px;
+    animation: manga 12s infinite 4s;
+}
+.boom .meotxe {
+    
+    position: absolute;
+    top: 450px;
+    right: -800px;
+    animation: dragonballs 10s infinite 6s;
+}
+@keyframes cnobili{
+    0% {right:0px;}
+    50% {right: 50px;}
+    100% {right: 50px;}
+}
+@keyframes yvelaze{
+    0% {margin-left:0px;}
+    50%{margin-left: 50px;}
+    100% {margin-left: 50px;}
+}
+@keyframes manga{
+    0% {margin-left:0px;}
+    50%{margin-left: 50px;}
+    100% {margin-left: 50px;}
+}
+@keyframes dragonballs{
+    0% {right:0px;}
+    50% {right: 600px;}
+    100% {right: 600px;}
+}
+h2{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+h3{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.history2{
+    width:1000px;
+    margin-top: 100px;
+    padding: 45px ;
+    color: #ffffff;
+    margin: 0 auto;
+    
+}
+.gif2{
+    background-image: url(../img/anime-pretty.gif);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.slaideri{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 200px;
+
+}
+.slaideri .owl-carousel{
+    width: 320px;
+    overflow: hidden;
+}
+.slaideri .owl-carousel .item{
+    width: 100%;
+    height: 235px;
+    overflow: hidden;
+
+}
+.item img{
+    width: 100%;
+}
+.shavi{
+  /*  background-color: #000000;*/
+}
+.map{
+   padding-top: 100px;
+}
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    height: 460px;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+  }
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }    
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
